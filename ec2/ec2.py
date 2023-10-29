@@ -74,6 +74,8 @@ class ec2:
                 status = 'PASS' if not has_public_ip else 'FAIL'  
                 print(f"EC2 Instance {instance_id}: {status}")
 
+
+#추가
     def check_ami_public(self):
         # AMI의 공개 여부 확인
         ami_images = self.ec2_client.describe_images(Owners=['self'])

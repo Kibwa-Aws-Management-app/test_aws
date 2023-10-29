@@ -131,7 +131,7 @@ class iam:
             else:
                 print(f"User '{username}' does not have MFA information.")
 
-
+#추가
     def check_no_expired_server_certificates_stored(self):
         # 사용자의 서버 인증서가 만료되었는지 확인합니다.
         for username in self.iam_list:
